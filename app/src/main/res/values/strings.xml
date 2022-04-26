@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Pruebacoink</string>
+    <string name="str_main">LA ALCANCÍA QUE SIEMPRE TE ACOMPAÑA</string>
+    <string name="register">REGÍSTRATE</string>
+    <string name="login">INGRESA</string>
 </resources>
