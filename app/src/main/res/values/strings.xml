@@ -3,4 +3,7 @@
     <string name="str_main">LA ALCANCÍA QUE SIEMPRE TE ACOMPAÑA</string>
     <string name="register">REGÍSTRATE</string>
     <string name="login">INGRESA</string>
+    <!-- UserNumberFragment -->
+    <string name="title_user_number">NÚMERO CELULAR</string>
+    <string name="desc_user_number">Para comenzar, por favor \n ingresa tu número celular.</string>
 </resources>
