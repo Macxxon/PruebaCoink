@@ -1,4 +1,4 @@
-package com.make.deve.pruebacoink.util
+package com.make.deve.pruebacoink.ui.util
 
 import android.view.View
 

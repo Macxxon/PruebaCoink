@@ -19,4 +19,47 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <style name="passCodeButton" parent="@style/Widget.AppCompat.Button.Borderless">
+        <item name="android:layout_width">72dp</item>
+        <item name="android:layout_height">72dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@color/darkGreen</item>
+        <item name="fontFamily">@font/montserratbold</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Headline</item>
+    </style>
+
+    <style name="MakeEditText" parent="@android:style/Widget.EditText">
+        <item name="android:layout_marginStart">6dp</item>
+        <item name="android:layout_marginEnd">6dp</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="MakeTextInputLayout">
+        <item name="android:layout_weight">4</item>
+        <item name="android:layout_marginStart">20dp</item>
+        <item name="android:layout_marginEnd">20dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+    <style name="ExposedDropdownMenuText.App.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu">
+        <item name="boxStrokeWidth">0dp</item>
+        <item name="android:layout_weight">4</item>
+        <item name="android:layout_marginStart">20dp</item>
+        <item name="android:layout_marginEnd">20dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="boxBackgroundColor">@android:color/transparent</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.App.SmallComponent</item>
+    </style>
+    <style name="ShapeAppearance.App.SmallComponent" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">10dp</item>
+    </style>
+
+    <style name="AppTheme.ProgressBarThemeHorizontal" parent="Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="android:indeterminateTint">@color/white</item>
+        <item name="android:indeterminateTintMode">src_atop</item>
+    </style>
 </resources>

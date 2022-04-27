@@ -3,7 +3,46 @@
     <string name="str_main">LA ALCANCÍA QUE SIEMPRE TE ACOMPAÑA</string>
     <string name="register">REGÍSTRATE</string>
     <string name="login">INGRESA</string>
-    <!-- UserNumberFragment -->
-    <string name="title_user_number">NÚMERO CELULAR</string>
+    <!-- UserPhoneFragment -->
+    <string name="title_user_phone">NÚMERO CELULAR</string>
     <string name="desc_user_number">Para comenzar, por favor \n ingresa tu número celular.</string>
+    <string name="xxx_xxxxxx">XXXXXXXXX</string>
+    <!-- UserInfoFragment -->
+    <string name="title_user_info">DATOS DE CUENTA</string>
+    <string name="desc_one_user_info">¿CUÁLES SON TUS DATOS?</string>
+    <string name="desc_two_user_info">Ahora necesitamos saber \n algunos datos tuyos</string>
+    <string name="desc_doc_user_info">Documento de identidad</string>
+    <string name="desc_config_user_info">Configura tu cuenta</string>
+    <string name="next">SIGUIENTE</string>
+    <!-- UserInfoFragment EditText -->
+    <string name="documentTypeStr">Tipo de documento</string>
+    <string name="documentNumberStr">Número de documento</string>
+    <string name="documentDateStr">Fecha de expedición del documento</string>
+    <string name="dateBirthdayStr">Fecha de nacimiento</string>
+    <string name="genderStr">Genero</string>
+    <string name="emailStr">Correo electrónico</string>
+    <string name="emailConfirmStr">Confirmar correo electrónico</string>
+    <string name="pinStr">PIN de seguridad</string>
+    <string name="pinConfirmStr">Confirmar PIN de seguridad</string>
+    <!-- UserInfoFragment Errors -->
+    <string name="error_field_required">Campo Requerido</string>
+    <string name="error_invalid_email">Correo electronico es invalido</string>
+    <string name="error_pin_code">Debe ser de 4 digitos</string>
+
+    <!-- region Remote Errors -->
+    <integer name="error_remote_default_code">0</integer>
+    <string name="error_remote_default_desc">Problemas de conexión a internet, por favor intente nuevamente.</string>
+
+    <integer name="error_remote_timeout">1</integer>
+    <string name="error_remote_timeout">No hay conexión con el servidor. Verifique su conexión a internet e intente nuevamente.</string>
+
+    <integer name="error_remote_unhost">2</integer>
+    <string name="error_remote_unhost">No hay conexión con el servidor. Verifique su conexión a internet e intente nuevamente.</string>
+    <!-- endregion -->
+    <integer name="error_ui_default">0</integer>
+    <string name="error_ui_default">Ocurrió un error, por favor intente nuevamente.</string>
+
+    <!-- region Util -->
+    <string name="util_loading">Cargando…</string>
+    <!-- endregion -->
 </resources>

@@ -7,8 +7,14 @@
 
     <fragment
         android:id="@+id/nav_user_number"
-        android:name="com.make.deve.pruebacoink.registerFragments.UserNumberFragment"
+        android:name="com.make.deve.pruebacoink.ui.registerFragments.UserPhoneFragment"
         tools:layout="@layout/fragment_user_number">
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_user_info"
+        android:name="com.make.deve.pruebacoink.ui.registerFragments.UserInfoFragment"
+        tools:layout="@layout/fragment_user_info">
     </fragment>
 
 </navigation>
