@@ -35,7 +35,8 @@ class UserInfoFragment: BaseFragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        (activity as? RegisterActivity)?.toggleTitle(true, resources.getString(R.string.title_user_info))
+        (activity as? RegisterActivity)?.toggleTitle(true, resources.getString(R.string.title_user_info),two = true,
+            three = false)
     }
 
     override fun onCreateView(

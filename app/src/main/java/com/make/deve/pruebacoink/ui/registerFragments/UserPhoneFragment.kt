@@ -27,7 +27,9 @@ class UserPhoneFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        (activity as? RegisterActivity)?.toggleTitle(true, resources.getString(R.string.title_user_phone))
+        (activity as? RegisterActivity)?.toggleTitle(true, resources.getString(R.string.title_user_phone),
+            two = false,
+            three = false)
     }
 
     override fun onCreateView(
