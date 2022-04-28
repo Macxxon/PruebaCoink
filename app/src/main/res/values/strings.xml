@@ -28,7 +28,19 @@
     <string name="error_field_required">Campo Requerido</string>
     <string name="error_invalid_email">Correo electronico es invalido</string>
     <string name="error_pin_code">Debe ser de 4 digitos</string>
-
+    <!-- UserFinishFragment -->
+    <string name="title_user_finish">FINALIZAR</string>
+    <string name="desc_one_user_finish">ESTAS MUY CERCA DE SER \n PARTE DE COINK.</string>
+    <string name="desc_two_user_finish">Solo es necesario que leas \ndetenidamente el contrato que se \nencuentra al final de esta pantalla\ny lo aceptes.</string>
+    <string name="desc_title_user_finish">LO MÁS IMPORTANTE</string>
+    <string name="terms_user_finish">Para la apertura del Depósito de Bajo Monto en COINK debes ser una persona natural que de acuerdo con nuestra legislación vigente te encuentres en plena capacidad para adquirir derechos y contraer obligaciones. \n\nAbrirás una cuenta COINK de Bajo Monto la cual te permitirá tener un saldo hasta por 8 salarios mínimos en el mes y realizar débitos por el mismo valor. \n\nSi deseas sobrepasar estos límites debes solicitarnos la apertura de un Depósito Ordinario COINK Persona Natural. \n\nSolo puedes tener una cuenta COINK de Bajo Monto y podrás utilizar tu dispositivo móvil para consultar tu saldo, tus movimientos, realizar tus transacciones y administrar tu cuenta. \n\nRecuerda que no necesitas saldo mínimo ni monto inicial para su apertura.</string>
+    <string name="title_terms">Lee tu contrato</string>
+    <string name="accept_terms">He leído ya acepto el contrato</string>
+    <string name="ok_str">ACEPTAR</string>
+    <!-- UserSuccessFragment-->
+    <string name="title_user_success">¡Bienvenido a Coink!</string>
+    <string name="desc_user_success">¡Cuenta creada exitosamente, tu marrano ya está listo para que empieces a ahorrar!</string>
+    <string name="continue_str">CONTINUAR</string>
     <!-- region Remote Errors -->
     <integer name="error_remote_default_code">0</integer>
     <string name="error_remote_default_desc">Problemas de conexión a internet, por favor intente nuevamente.</string>

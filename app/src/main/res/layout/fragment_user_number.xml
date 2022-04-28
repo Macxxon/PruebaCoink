@@ -58,6 +58,7 @@
             android:inputType="none"
             android:textSize="20sp"
             app:keep_hint="true"
+            android:focusable="false"
             app:allowed_chars="1234567890"
             android:background="@drawable/edittext_border"
             app:layout_constraintEnd_toEndOf="parent"
