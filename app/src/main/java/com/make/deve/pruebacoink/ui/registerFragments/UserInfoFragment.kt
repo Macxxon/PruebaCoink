@@ -8,10 +8,12 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import androidx.databinding.DataBindingUtil
-import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
+import androidx.navigation.navGraphViewModels
+import com.google.gson.Gson
 import com.make.deve.pruebacoink.R
 import com.make.deve.pruebacoink.databinding.FragmentUserInfoBinding
+import com.make.deve.pruebacoink.repo.info.InfoUserModel
 import com.make.deve.pruebacoink.ui.register.RegisterActivity
 import com.make.deve.pruebacoink.ui.base.BaseFragment
 import com.make.deve.pruebacoink.ui.base.DatePickerFragment
@@ -19,9 +21,8 @@ import com.make.deve.pruebacoink.ui.base.DatePickerFragment
 class UserInfoFragment: BaseFragment() {
 
     lateinit var binding: FragmentUserInfoBinding
-    val vm:UserRegisterViewModel by viewModels()
+    val vm by navGraphViewModels<UserRegisterViewModel>(R.id.mobile_navigation)
 
-    private lateinit var viewModel: UserRegisterViewModel
     private var documentType: String? = null
     private var documentNumber: String? = null
     private var dateExp: String? = null
@@ -114,6 +115,14 @@ class UserInfoFragment: BaseFragment() {
         return pin.length == 4
     }
 
+    private fun isPinEquals(pin: String, pinConfirm:String): Boolean {
+        return pin == pinConfirm
+    }
+
+    private fun isEmailEquals(email: String, emailConfirm:String): Boolean {
+        return email == emailConfirm
+    }
+
     private fun attemptRegister() {
         // Reset errors.
         binding.documentType.error = null
@@ -185,6 +194,16 @@ class UserInfoFragment: BaseFragment() {
             focusView = binding.pinCodeConfirm
             cancel = true
         }
+        if (!isPinEquals(pinCode!!,pinCodeConfirm!!)) {
+            binding.pinCodeConfirm.error = getString(R.string.error_pin_match)
+            focusView = binding.pinCodeConfirm
+            cancel = true
+        }
+        if (!isEmailEquals(email!!,emailConfirm!!)) {
+            binding.emailConfirm.error = getString(R.string.error_email_match)
+            focusView = binding.emailConfirm
+            cancel = true
+        }
         if (cancel) {
             focusView!!.requestFocus()
             if(!TextUtils.isEmpty(documentType) && !TextUtils.isEmpty(documentNumber)
@@ -198,8 +217,17 @@ class UserInfoFragment: BaseFragment() {
                 binding.nextBtn.backgroundTintList = resources.getColorStateList(R.color.gray)
             }
         } else {
-            findNavController().navigate(R.id.nav_user_finish)
+            createUser()
         }
+    }
+
+    private fun createUser(){
+        vm.infoUserModel = InfoUserModel(
+            vm.phoneNumber.value!!, documentType,
+            documentNumber, dateExp,
+            dateBirth, gender,
+            email, pinCode)
+        findNavController().navigate(R.id.nav_user_finish)
     }
 
 }

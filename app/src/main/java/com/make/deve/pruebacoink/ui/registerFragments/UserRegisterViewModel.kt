@@ -1,9 +1,9 @@
 package com.make.deve.pruebacoink.ui.registerFragments
 
-import android.util.Log
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
 import com.make.deve.pruebacoink.repo.info.IInfoRepo
+import com.make.deve.pruebacoink.repo.info.InfoUserModel
 import com.make.deve.pruebacoink.ui.util.BaseViewModel
 import kotlinx.coroutines.launch
 import org.koin.core.KoinComponent
@@ -14,6 +14,7 @@ class UserRegisterViewModel : BaseViewModel(), KoinComponent {
     val phoneNumber = MutableLiveData<String>()
 
     var newPhoneNumber = MutableLiveData<String>()
+    var infoUserModel: InfoUserModel? = null
 
     val numPadListener = object : NumPadListener {
         override fun onNumberClicked(number: Char) {

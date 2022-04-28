@@ -1,13 +1,15 @@
 package com.make.deve.pruebacoink.ui.registerFragments
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.databinding.DataBindingUtil
-import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
+import androidx.navigation.navGraphViewModels
+import com.google.gson.Gson
 import com.make.deve.pruebacoink.R
 import com.make.deve.pruebacoink.databinding.FragmentUserFinishBinding
 import com.make.deve.pruebacoink.ui.base.BaseFragment
@@ -16,9 +18,8 @@ import com.make.deve.pruebacoink.ui.register.RegisterActivity
 class UserFinishFragment: BaseFragment() {
 
     lateinit var binding: FragmentUserFinishBinding
-    val vm:UserRegisterViewModel by viewModels()
+    val vm by navGraphViewModels<UserRegisterViewModel>(R.id.mobile_navigation)
 
-    private lateinit var viewModel: UserRegisterViewModel
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -55,6 +56,7 @@ class UserFinishFragment: BaseFragment() {
         if(!binding.checkboxTerms.isChecked){
             Toast.makeText(requireContext(), "Por favor, acepta el contrato", Toast.LENGTH_SHORT).show()
         }else{
+            Log.d("UserResponse", "Data Json: ${Gson().toJson(vm.infoUserModel)}")
             findNavController().navigate(R.id.nav_success)
         }
     }

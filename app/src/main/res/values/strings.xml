@@ -27,7 +27,9 @@
     <!-- UserInfoFragment Errors -->
     <string name="error_field_required">Campo Requerido</string>
     <string name="error_invalid_email">Correo electronico es invalido</string>
+    <string name="error_email_match">El Correo electronico no coincide</string>
     <string name="error_pin_code">Debe ser de 4 digitos</string>
+    <string name="error_pin_match">El pin no coincide </string>
     <!-- UserFinishFragment -->
     <string name="title_user_finish">FINALIZAR</string>
     <string name="desc_one_user_finish">ESTAS MUY CERCA DE SER \n PARTE DE COINK.</string>

@@ -1,6 +1,7 @@
 package com.make.deve.pruebacoink.ui.registerFragments
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -9,16 +10,19 @@ import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
+import androidx.navigation.navGraphViewModels
+import com.google.gson.Gson
 import com.make.deve.pruebacoink.R
 import com.make.deve.pruebacoink.databinding.FragmentUserNumberBinding
 import com.make.deve.pruebacoink.databinding.LayoutPinCodeNumpadBinding
+import com.make.deve.pruebacoink.repo.info.InfoUserModel
 import com.make.deve.pruebacoink.ui.register.RegisterActivity
 
 class UserPhoneFragment : Fragment() {
 
     lateinit var binding: FragmentUserNumberBinding
 
-    private lateinit var viewModel: UserRegisterViewModel
+    val viewModel by navGraphViewModels<UserRegisterViewModel>(R.id.mobile_navigation)
     private lateinit var includeInternalLayout: LayoutPinCodeNumpadBinding
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -33,8 +37,6 @@ class UserPhoneFragment : Fragment() {
         binding = DataBindingUtil.inflate(inflater,
             R.layout.fragment_user_number, container, false)
 
-        viewModel = ViewModelProvider(this)
-            .get(UserRegisterViewModel::class.java)
         binding.lifecycleOwner = viewLifecycleOwner
         binding.viewModel = viewModel
 
@@ -58,8 +60,6 @@ class UserPhoneFragment : Fragment() {
             Toast.makeText(requireContext(), "Espera un momento...", Toast.LENGTH_SHORT).show()
             findNavController().navigate(R.id.nav_user_info)
         }
-
-
 
         return binding.root
     }
