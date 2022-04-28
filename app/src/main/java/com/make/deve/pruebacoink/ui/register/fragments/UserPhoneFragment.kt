@@ -1,21 +1,17 @@
-package com.make.deve.pruebacoink.ui.registerFragments
+package com.make.deve.pruebacoink.ui.register.fragments
 
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.navGraphViewModels
-import com.google.gson.Gson
 import com.make.deve.pruebacoink.R
 import com.make.deve.pruebacoink.databinding.FragmentUserNumberBinding
 import com.make.deve.pruebacoink.databinding.LayoutPinCodeNumpadBinding
-import com.make.deve.pruebacoink.repo.info.InfoUserModel
 import com.make.deve.pruebacoink.ui.register.RegisterActivity
 
 class UserPhoneFragment : Fragment() {

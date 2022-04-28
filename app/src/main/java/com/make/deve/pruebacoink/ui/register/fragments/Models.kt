@@ -1,4 +1,4 @@
-package com.make.deve.pruebacoink.ui.registerFragments
+package com.make.deve.pruebacoink.ui.register.fragments
 
 import com.make.deve.pruebacoink.ui.util.BaseUIData
 

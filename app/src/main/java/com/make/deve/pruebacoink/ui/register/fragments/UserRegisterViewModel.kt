@@ -1,4 +1,4 @@
-package com.make.deve.pruebacoink.ui.registerFragments
+package com.make.deve.pruebacoink.ui.register.fragments
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope

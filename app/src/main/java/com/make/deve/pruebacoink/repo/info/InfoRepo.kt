@@ -2,10 +2,10 @@ package com.make.deve.pruebacoink.repo.info
 
 import com.make.deve.pruebacoink.remote.info.IInfoService
 import com.make.deve.pruebacoink.repo.util.BaseRepo
-import com.make.deve.pruebacoink.ui.registerFragments.DocItem
-import com.make.deve.pruebacoink.ui.registerFragments.GenderItem
-import com.make.deve.pruebacoink.ui.registerFragments.GetDocTypesResponseModel
-import com.make.deve.pruebacoink.ui.registerFragments.GetGendersResponseModel
+import com.make.deve.pruebacoink.ui.register.fragments.DocItem
+import com.make.deve.pruebacoink.ui.register.fragments.GenderItem
+import com.make.deve.pruebacoink.ui.register.fragments.GetDocTypesResponseModel
+import com.make.deve.pruebacoink.ui.register.fragments.GetGendersResponseModel
 import com.make.deve.pruebacoink.ui.util.BaseUIDataError
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext

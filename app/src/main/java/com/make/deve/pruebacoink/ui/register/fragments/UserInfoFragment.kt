@@ -1,4 +1,4 @@
-package com.make.deve.pruebacoink.ui.registerFragments
+package com.make.deve.pruebacoink.ui.register.fragments
 
 import android.os.Bundle
 import android.text.TextUtils
@@ -10,7 +10,6 @@ import android.widget.ArrayAdapter
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.navGraphViewModels
-import com.google.gson.Gson
 import com.make.deve.pruebacoink.R
 import com.make.deve.pruebacoink.databinding.FragmentUserInfoBinding
 import com.make.deve.pruebacoink.repo.info.InfoUserModel

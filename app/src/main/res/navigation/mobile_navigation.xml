@@ -7,25 +7,25 @@
 
     <fragment
         android:id="@+id/nav_user_number"
-        android:name="com.make.deve.pruebacoink.ui.registerFragments.UserPhoneFragment"
+        android:name="com.make.deve.pruebacoink.ui.register.fragments.UserPhoneFragment"
         tools:layout="@layout/fragment_user_number">
     </fragment>
 
     <fragment
         android:id="@+id/nav_user_info"
-        android:name="com.make.deve.pruebacoink.ui.registerFragments.UserInfoFragment"
+        android:name="com.make.deve.pruebacoink.ui.register.fragments.UserInfoFragment"
         tools:layout="@layout/fragment_user_info">
     </fragment>
 
     <fragment
         android:id="@+id/nav_user_finish"
-        android:name="com.make.deve.pruebacoink.ui.registerFragments.UserFinishFragment"
+        android:name="com.make.deve.pruebacoink.ui.register.fragments.UserFinishFragment"
         tools:layout="@layout/fragment_user_finish">
     </fragment>
 
     <dialog
         android:id="@+id/nav_success"
-        android:name="com.make.deve.pruebacoink.ui.registerFragments.SuccessDialogFragment"
+        android:name="com.make.deve.pruebacoink.ui.register.fragments.SuccessDialogFragment"
         tools:layout="@layout/fragment_success" />
 
 </navigation>

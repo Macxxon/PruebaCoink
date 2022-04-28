@@ -6,7 +6,7 @@
 
         <variable
             name="numPadListener"
-            type="com.make.deve.pruebacoink.ui.registerFragments.NumPadListener" />
+            type="com.make.deve.pruebacoink.ui.register.fragments.NumPadListener" />
 
     </data>
     <LinearLayout

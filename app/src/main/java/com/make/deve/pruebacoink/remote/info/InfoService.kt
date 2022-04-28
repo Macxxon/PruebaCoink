@@ -12,7 +12,7 @@ class InfoService: BaseRetrofitService(),IInfoService {
         var res = DocTypesResponseModel()
         try {
 
-            val rem = contract.getDocTypes("030106")
+            val rem = contract.getDocTypes(API_KEY)
             println(rem)
             println(rem.body())
             if (rem.isSuccessful) {
@@ -47,7 +47,7 @@ class InfoService: BaseRetrofitService(),IInfoService {
         var res = GendersResponseModel()
         try {
 
-            val rem = contract.getGender("030106")
+            val rem = contract.getGender(API_KEY)
             println(rem)
             println(rem.body())
             if (rem.isSuccessful) {
@@ -76,6 +76,10 @@ class InfoService: BaseRetrofitService(),IInfoService {
         }
 
         return res
+    }
+
+    companion object{
+        const val API_KEY = "030106"
     }
 
 }

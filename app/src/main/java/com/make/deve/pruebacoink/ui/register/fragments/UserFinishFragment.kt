@@ -1,4 +1,4 @@
-package com.make.deve.pruebacoink.ui.registerFragments
+package com.make.deve.pruebacoink.ui.register.fragments
 
 import android.os.Bundle
 import android.util.Log
